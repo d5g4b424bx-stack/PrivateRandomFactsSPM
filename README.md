@@ -19,7 +19,7 @@ Add `https://github.com/d5g4b424bx-stack/PrivateRandomFactsSPM.git` to your Swif
 let service = PrivateRandomFactsSPM.RandomFactAPIService()
 
 //Make the request with `getRandomFact`, passing your completion closure as the parameter
-test.getRandomFact(completion: { fact, error in
+service.getRandomFact(completion: { fact, error in
     //Run your code here
     print(fact)
 })
