@@ -8,7 +8,7 @@
 import Alamofire
 import Foundation
 
-class RandomFactAPIService: APIServiceProtocol {
+public class RandomFactAPIService: APIServiceProtocol {
     
     private let session: Session
     private let randomFactsURL = "https://uselessfacts.jsph.pl/api/v2/facts/random"
