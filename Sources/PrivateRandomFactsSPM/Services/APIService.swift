@@ -13,7 +13,7 @@ public class RandomFactAPIService: APIServiceProtocol {
     private let session: Session
     private let randomFactsURL = "https://uselessfacts.jsph.pl/api/v2/facts/random"
 
-    init(session: Session = AF) {
+    public init(session: Session = AF) {
         self.session = session
     }
 
