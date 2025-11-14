@@ -17,7 +17,7 @@ public class RandomFactAPIService: APIServiceProtocol {
         self.session = session
     }
 
-    func getRandomFact(completion: @escaping @Sendable (Fact?, Error?) -> Void) {
+    public func getRandomFact(completion: @escaping @Sendable (Fact?, Error?) -> Void) {
         session.request(randomFactsURL, method: .get)
             .validate()
             .responseDecodable(of: Fact.self) { response in
