@@ -23,6 +23,7 @@ test.getRandomFact(completion: { fact, error in
     //Run your code here
     print(fact)
 })
+```
 
 
 ## Models
@@ -35,3 +36,4 @@ struct Fact: Codable {
     let id: String
     let text: String
 }
+```
